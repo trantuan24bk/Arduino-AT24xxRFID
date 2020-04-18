@@ -1,26 +1,27 @@
 
-ARDUINO LIBRARY FOR LOGGING TO I2C-EEPROM
+### ARDUINO LIBRARY FOR LOGGING TO I2C-EEPROM
 
-1. Swipe rfid card
+1. Swipe RFID card
 2. Check, if it is in the EEPROM -return name of cardholder(also stored in EEPROM)
 3. If so, chek pin-code(in EEPROM)
 4. If correct, log some data in EEPROM
 
-Example of stored information:
+**Example of stored information:**
+
 Entry,RFIDTAG*******,NameMax20Char,pin***,misc
 123,4E00A71C7580,Benny Andersson,1234,1011
 
-Example of LOGGED information:
+**Example of LOGGED information:**
+
 Entry,RFIDTAG*******,Date&Time,a number,a byte
 123,4E00A71C7580,01012015-13:30,9999,240
 
-*RFID tags in EEPROM needs to be numbered, 1,2,3....
-*Needs some way to check how many entrys there are
-*Needs some way to access/delete a whole entry
-*Need some function to maintain EEPROM, delete, verify, update rfid-list.
+- RFID tags in EEPR- OM needs to be numbered, 1,2,3....
+- Needs some way to check how many entrys there are
+- Needs some way to access/delete a whole entry
+- Need some function to maintain EEPROM, delete, verify, update rfid-list.
 
-==================================================================
-
+**Byte orders**
 - 0x0000 		1-byte 		Valid signal
 - 0x0001 		2-byte 		Num of card
 
@@ -49,9 +50,7 @@ Log address (49 bytes)
 - 0x8192 		5-byte 		A byte
 - 0x8192 		1-byte 		(NULL)Space between each items
 
-==================================================================
-
-MEMORY ORGANIZATION
+### MEMORY ORGANIZATION
 
 Max 160 cards
 Max 490 log items.
@@ -79,18 +78,6 @@ Log address (49 bytes)
 - 0x8237 		5-byte 		A byte
 - 0x8242 		1-byte 		(NULL)Space between each items
 
-==================================================================
-
-HOW TO USE
-
-- Copy all files to arduino 'libraries' directory
-	
-	\arduino-1.0.6\libraries\
-
-- Run arduino IDE
-- Goto examples
-
-- For more details, open files:
-
-	+ \libraries\AT24xxRFID\AT24xxRFID.h
-	+ \libraries\AT24xxRFID\AT24xxRFID.cpp
+### Contribution
+- Any contribute please make a pull request.
+- Free to use for any purpose. Use at your own risk.
