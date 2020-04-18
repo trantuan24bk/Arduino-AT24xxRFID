@@ -1,0 +1,48 @@
+
+Serial port COM29 opened
+Starting EEPROM...
+-----------------------------
+
+Clear cards & logs to zero!
+
+-----------------------------
+
+Add new cards...
+Add card #0 success!
+Add card #1 success!
+Add card #2 success!
+Total cards: 3
+-----------------------------
+
+Read info from EEPROM. 
+
+#0: A101 - 123456789ABC - Benny Andersson - 1000 - 2345
+#1: B102 - 123456789DEF - Barack Obama - 1001 - 2346
+#2: C103 - 123456ABC789 - George W.Bush - 1002 - 2347
+-----------------------------
+
+Delete #1 card. 
+Total cards: 2
+-----------------------------
+
+Find card by tag: 123456789DEF
+RFID tag not found!
+-----------------------------
+
+Find card by tag: 123456ABC789
+Found: #1
+#1: C103 - 123456ABC789 - George W.Bush - 1002 - 2347
+-----------------------------
+
+Write log...
+Add log #0 success!
+Add log #1 success!
+Add log #2 success!
+Total logs: 3
+-----------------------------
+
+Read log...
+#0: A101 - 123456789ABC - 01012015-13:30 - 9876 - 215
+#1: B102 - 123456789DEF - 01012015-14:30 - 9877 - 216
+#2: C103 - 123456ABC789 - 01012015-15:30 - 9878 - 217
+Serial port COM29 closed
