@@ -1,17 +1,17 @@
 
-### ARDUINO LIBRARY FOR LOGGING TO I2C-EEPROM
+## ARDUINO LIBRARY FOR LOGGING TO I2C-EEPROM
 
 1. Swipe RFID card
 2. Check, if it is in the EEPROM -return name of cardholder(also stored in EEPROM)
 3. If so, chek pin-code(in EEPROM)
 4. If correct, log some data in EEPROM
 
-**Example of stored information:**
+### Example of stored information
 
 Entry,RFIDTAG*******,NameMax20Char,pin***,misc
 123,4E00A71C7580,Benny Andersson,1234,1011
 
-**Example of LOGGED information:**
+### Example of logged information
 
 Entry,RFIDTAG*******,Date&Time,a number,a byte
 123,4E00A71C7580,01012015-13:30,9999,240
@@ -50,7 +50,7 @@ Log address (49 bytes)
 - 0x8192 		5-byte 		A byte
 - 0x8192 		1-byte 		(NULL)Space between each items
 
-### Memory Organization
+## Memory Organization
 
 Max 160 cards
 Max 490 log items.
@@ -78,7 +78,7 @@ Log address (49 bytes)
 - 0x8237 		5-byte 		A byte
 - 0x8242 		1-byte 		(NULL)Space between each items
 
-### Contribution
+## Contribution
 
 - Any contribute please make a pull request.
 - Free to use for any purpose. Use at your own risk.
