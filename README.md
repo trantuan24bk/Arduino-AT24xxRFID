@@ -50,7 +50,7 @@ Log address (49 bytes)
 - 0x8192 		5-byte 		A byte
 - 0x8192 		1-byte 		(NULL)Space between each items
 
-### MEMORY ORGANIZATION
+### Memory Organization
 
 Max 160 cards
 Max 490 log items.
@@ -79,5 +79,6 @@ Log address (49 bytes)
 - 0x8242 		1-byte 		(NULL)Space between each items
 
 ### Contribution
+
 - Any contribute please make a pull request.
 - Free to use for any purpose. Use at your own risk.
